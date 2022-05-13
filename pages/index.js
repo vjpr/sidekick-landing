@@ -1,4 +1,9 @@
 import Head from 'next/head'
+import fileSaver from 'file-saver'
+
+const saveFile = (url) => {
+  fileSaver.saveAs(url)
+}
 
 export default function Home() {
   return (
@@ -19,12 +24,12 @@ export default function Home() {
 
         <div className="grid">
           <a href="http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-chrome-extension.crx" target="_blank" className="card">
-            <h3>Download Chrome Extension &rarr;</h3>
+            <h3 onClick={() => saveFile("http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-chrome-extension.crx")}>Download Chrome Extension &rarr;</h3>
             <p>Download</p>
           </a>
 
           <a href="http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.zip" target="_blank" className="card">
-            <h3>Download Desktop App &rarr;</h3>
+            <h3 onClick={() => saveFile("http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.zip")}>Download Desktop App &rarr;</h3>
             <p>MacOS Apple Silicon Only</p>
           </a>
 
