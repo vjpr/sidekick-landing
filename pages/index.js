@@ -47,6 +47,9 @@ export default function Home() {
               Download Desktop App &rarr;
             </h3>
             <p>MacOS Apple Silicon Only</p>
+            <p style={{fontSize: '13px'}}>
+              You may need to right-click the app in finder and click open.
+            </p>
           </a>
         </div>
       </main>
