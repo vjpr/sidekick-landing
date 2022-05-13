@@ -1,9 +1,14 @@
 import Head from 'next/head'
 import fileSaver from 'file-saver'
 
-const saveFile = (url) => {
+const saveFile = url => {
   fileSaver.saveAs(url)
 }
+
+const desktopFile =
+  'http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.zip'
+const extensionFile =
+  'http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-chrome-extension.crx.zip'
 
 export default function Home() {
   return (
@@ -14,25 +19,26 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Sidekick
-        </h1>
+        <h1 className="title">Sidekick</h1>
 
         <p className="description">
           Vertical tabs and better tab groups for Chrome
         </p>
 
         <div className="grid">
-          <a href="http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-chrome-extension.crx" target="_blank" className="card">
-            <h3 onClick={() => saveFile("http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-chrome-extension.crx")}>Download Chrome Extension &rarr;</h3>
+          <a className="card">
+            <h3 onClick={() => saveFile(extensionFile)}>
+              Download Chrome Extension &rarr;
+            </h3>
             <p>Download</p>
           </a>
 
-          <a href="http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.zip" target="_blank" className="card">
-            <h3 onClick={() => saveFile("http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.zip")}>Download Desktop App &rarr;</h3>
+          <a href="" target="_blank" className="card">
+            <h3 onClick={() => saveFile(desktopFile)}>
+              Download Desktop App &rarr;
+            </h3>
             <p>MacOS Apple Silicon Only</p>
           </a>
-
         </div>
       </main>
 
@@ -42,8 +48,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
