@@ -23,17 +23,23 @@ export default function Home() {
       <main>
         <h1 className="title">Sidekick</h1>
 
-        <p className="description">
-          Vertical tabs for Chrome
-        </p>
+        <p className="description">Vertical tabs for Chrome</p>
 
         <div className="grid">
           <a className="card">
             <h3 onClick={() => saveFile(extensionFile)}>
               Download Chrome Extension &rarr;
             </h3>
-            <p>To install, in Chrome, go to, Menu > More tools > Extensions > Developer mode
-            - Load unpacked...select folder</p>
+            <div>
+              <p style={{fontSize: '13px'}}>
+                To install, in Chrome, go to, Menu > More tools > Extensions >
+                Developer mode
+              </p>
+              <br />
+              <p style={{fontSize: '13px'}}>
+                Click "Load unpacked" > Select folder you downloaded
+              </p>
+            </div>
           </a>
 
           <a href="" target="_blank" className="card">
