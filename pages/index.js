@@ -23,7 +23,7 @@ export default function Home() {
             <p>Download</p>
           </a>
 
-          <a href="http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.dmg" className="card">
+          <a href="http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.zip" className="card">
             <h3>Download Desktop App &rarr;</h3>
             <p>MacOS Apple Silicon Only</p>
           </a>
