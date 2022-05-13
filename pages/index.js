@@ -6,9 +6,9 @@ const saveFile = url => {
 }
 
 const desktopFile =
-  'http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.zip'
+  'https://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-desktop-macos-silicon.zip'
 const extensionFile =
-  'http://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-chrome-extension.crx.zip'
+  'https://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-chrome-extension.crx.zip'
 
 export default function Home() {
   return (
