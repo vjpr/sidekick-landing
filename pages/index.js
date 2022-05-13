@@ -22,7 +22,7 @@ export default function Home() {
         <h1 className="title">Sidekick</h1>
 
         <p className="description">
-          Vertical tabs and better tab groups for Chrome
+          Vertical tabs for Chrome
         </p>
 
         <div className="grid">
