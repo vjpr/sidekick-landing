@@ -10,7 +10,7 @@ const desktopFile =
   'https://sidekick-assets.s3.eu-central-1.amazonaws.com/ElectronReact-4.5.0-mac.zip'
 const extensionFile =
   //'https://sidekick-assets.s3.eu-central-1.amazonaws.com/sidekick-chrome-extension.crx.zip'
-  'https://sidekick-assets.s3.eu-central-1.amazonaws.com/prod.crx.zip'
+  'https://sidekick-assets.s3.eu-central-1.amazonaws.com/prod.zip'
 
 export default function Home() {
   return (
@@ -32,7 +32,8 @@ export default function Home() {
             <h3 onClick={() => saveFile(extensionFile)}>
               Download Chrome Extension &rarr;
             </h3>
-            <p>Download</p>
+            <p>To install, in Chrome, go to, Menu > More tools > Extensions > Developer mode
+            - Load unpacked...select folder</p>
           </a>
 
           <a href="" target="_blank" className="card">
